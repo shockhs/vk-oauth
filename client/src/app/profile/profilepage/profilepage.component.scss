@@ -1,0 +1,43 @@
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .profile {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    span + span {
+      margin-left: 10px;
+    }
+  }
+  .friends ul{
+    width: 400px;
+    margin-bottom: 2rem;
+    li {
+      display: flex;
+      justify-content: space-between;
+      .offline {
+        color: red;
+      }
+      .online {
+        color: green;
+      }
+    }
+  }
+
+  button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 45px;
+    font-size: 1.4rem;
+    transition: color 0.2s;
+  }
+  button:hover {
+    background-color: #c3bdbd;
+  }
+
+}
+

@@ -1,0 +1,28 @@
+<main>
+  <div *ngIf="currentUser; else loadingElement" class="profile">
+    <span class="info">{{currentUser.first_name + ' ' + currentUser.last_name}}</span>
+    <span class="birthday">{{currentUser.bdate | date }}</span>
+  </div>
+
+  <div *ngIf="friends; else loadingElement" class="friends">
+    <ul>
+      <li *ngFor="let friend of friends">
+        <span class="fullname">
+          {{friend.first_name + ' ' + friend.last_name}}
+        </span>
+        <span *ngIf="friend.online === 1; else offline" class="online">Онлайн</span>
+        <ng-template #offline>
+          <span class="offline">
+            Не в сети
+          </span>
+        </ng-template>
+      </li>
+    </ul>
+  </div>
+
+  <button (click)="handleLogoutClick()">Logout</button>
+
+  <ng-template #loadingElement>
+    <h2>Loading...</h2>
+  </ng-template>
+</main>

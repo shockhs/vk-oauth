@@ -1,0 +1,26 @@
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #3273dc;
+    }
+    span {
+      margin-right: 10px;
+    }
+    img{
+      width: 50px;
+      height: auto;
+    }
+  }
+}

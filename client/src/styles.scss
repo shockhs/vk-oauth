@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
